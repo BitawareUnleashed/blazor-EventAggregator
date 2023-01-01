@@ -7,7 +7,7 @@ public class EventAggregatorService : ISubscriber<TimeValueChanged>
 {
     private readonly IEventAggregator eventAggregator;
 
-    public event EventHandler<string> OnTimeSecondsChanged;
+    public event EventHandler<string>? OnTimeSecondsChanged;
 
     void ISubscriber<TimeValueChanged>.OnEventRaised(TimeValueChanged e)
     {
