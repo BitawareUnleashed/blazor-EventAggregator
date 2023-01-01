@@ -1,0 +1,9 @@
+﻿@using BlazorEventAggregator.Client.Services;
+@inherits LayoutComponentBase
+@inject EventAggregatorService eventAggregatorService
+
+<main>
+    <CascadingValue Value="@ActualDateTime">
+        @Body
+    </CascadingValue>
+</main>
