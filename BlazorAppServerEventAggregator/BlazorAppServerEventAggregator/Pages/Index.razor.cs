@@ -12,14 +12,4 @@ public partial class Index
     {
         base.OnInitialized();
     }
-
-    private void Decrement()
-    {
-
-    }
-
-    private void Increment()
-    {
-
-    }
 }
