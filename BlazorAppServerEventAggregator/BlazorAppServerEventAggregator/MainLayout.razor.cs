@@ -15,19 +15,7 @@ public partial class MainLayout
     protected override Task OnInitializedAsync()
     {
         eventAggregatorService.OnTimeSecondsChanged += EventAggregatorService_OnTimeSecondsChanged;
-        eventAggregatorService.OnCounterValueChanged += EventAggregatorService_OnCounterValueChanged;
         return base.OnInitializedAsync();
-    }
-
-
-    /// <summary>
-    /// Events the aggregator service, on counter value changed.
-    /// </summary>
-    /// <param name="sender">The sender.</param>
-    /// <param name="e">The e.</param>
-    private void EventAggregatorService_OnCounterValueChanged(object? sender, string e)
-    {
-
     }
 
     /// <summary>
